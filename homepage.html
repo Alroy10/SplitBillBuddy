@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split Bill Buddy</title>
+    <style>
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #FFFFFF;
+      background-color: #FFFFFF;
+      color: #212121;
+      line-height: 1.6;
+    }
+
+    /* 🌐 WIDER CONTAINER FOR LAPTOP VIEW */
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 40px;
+    }
+
+    .header {
+      text-align: center;
+      padding: 25px 0;
+    }
+
+    .name {
+      font-size: 3em;
+      font-weight: 700;
+      color: #4CAF50;
+    }
+
+    .hero-section {
+      text-align: center;
+      padding: 40px 0 60px;
+    }
+
+    .hero-title {
+      font-size: 2.8em;
+      font-weight: 700;
+      color: #212121;
+      margin-bottom: 25px;
+      line-height: 1.3;
+    }
+
+    .illustration-placeholder {
+      width: 100%;
+      height: 300px;
+      background-color: #F5F5F5;
+      margin: 40px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #757575;
+      font-style: italic;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .illustration-placeholder img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+
+    .hero-description {
+      font-size: 1.2em;
+      color: #212121;
+      margin-bottom: 40px;
+    }
+
+    .button {
+      background-color: #4CAF50;
+      color: #FFFFFF;
+      border: none;
+      padding: 18px 40px;
+      font-size: 1.2em;
+      font-weight: 600;
+      border-radius: 10px;
+      width: 250px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s, box-shadow 0.3s;
+    }
+
+    .button:hover {
+      background-color: #388E3C;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .feature-section {
+      background-color: #eeeaea;
+      padding: 60px 40px;
+      margin-bottom: 50px;
+      border-radius: 25px;
+    }
+
+    .feature-card {
+      background-color: #FFFFFF;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+      text-align: center;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .key-feature-tag {
+      font-size: 1em;
+      font-weight: 600;
+      color: #4CAF50;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+
+    .feature-title {
+      font-size: 2em;
+      font-weight: 700;
+      color: #212121;
+      margin-bottom: 15px;
+      line-height: 1.3;
+    }
+
+    .feature-description {
+      font-size: 1.1em;
+      color: #757575;
+    }
+
+    .step-heading {
+      font-size: 2.4em;
+      font-weight: 700;
+      color: #212121;
+      margin: 60px 0 30px;
+      text-align: center;
+    }
+
+    .step-container {
+      margin-bottom: 70px;
+    }
+
+    .step-container .step-title {
+      font-size: 1.8em;
+      font-weight: 700;
+      color: #212121;
+      margin: 40px 0 20px;
+      text-align: left;
+    }
+
+    .step-description {
+      font-size: 1.1em;
+      color: #212121;
+      margin-top: 20px;
+      text-align: left;
+    }
+
+    .mobile-frame-wrapper {
+      background-color: #4CAF50;
+      border-radius: 25px;
+      padding: 25px;
+      margin: 40px auto;
+      width: 100%;
+      max-width: 500px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .mobile-frame {
+      background-color: #FFFFFF;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+      min-height: 450px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .mobile-frame img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+
+    footer {
+      padding: 30px;
+      text-align: center;
+      font-size: 1.4em;
+      color: #4CAF50;
+      margin-top: 60px;
+    }
+
+    /* 📱 RESPONSIVE FIXES FOR SMALL DEVICES */
+    @media (max-width: 768px) {
+      .container {
+        padding: 0 20px;
+      }
+
+      .hero-title {
+        font-size: 2em;
+      }
+
+      .feature-section {
+        padding: 40px 20px;
+      }
+
+      .mobile-frame-wrapper {
+        max-width: 100%;
+      }
+
+      .feature-card {
+        padding: 25px;
+      }
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <span class="name">Split Bill Buddy</span>
+        </header>
+        <section class="hero-section">
+            <h1 class="hero-title">Never wonder who owes whom again.</h1>
+            <div class="illustration-placeholder">
+                <img src="homepage_images/a11.jpeg" alt="Illustration" />
+            </div>
+            <p class="hero-description">
+                Struggling to keep track of shared expenses with friends? Split Bill Buddy makes splitting bills simple—and it's free.
+            </p>
+            <button class="button" onclick="window.open('login.php','')">
+              Login
+            </button>
+        </section>     
+        <section class="feature-section">
+            <div class="feature-card">
+                <p class="key-feature-tag">Key Feature #1</p>
+                <h2 class="feature-title">Smart Bill Splitting</h2>
+                <p class="feature-description">
+                    Just log your shared expenses on the group page—our smart algorithm instantly calculates the easiest way to settle up.
+                </p>
+            </div>
+        </section>
+        <section class="feature-section">
+            <div class="feature-card">
+                <p class="key-feature-tag">Key Feature #2</p>
+                <h2 class="feature-title">Visual Spending Reports</h2>
+                <p class="feature-description">
+                    Get clear graphs and summaries of your group’s spending habits—by category, member, or time period.
+                </p>
+            </div>
+        </section>
+        <section class="feature-section">
+            <div class="feature-card">
+                <p class="key-feature-tag">Key Feature #3</p>
+                <h2 class="feature-title">Avoid confusion</h2>
+                <p class="feature-description">
+                   Instantly see who owes whom, with optimized settlement suggestions to reduce transactions.
+                </p>
+            </div>
+        </section>
+        <section class="feature-section">
+            <div class="feature-card">
+                <p class="key-feature-tag">Key Feature #4</p>
+                <h2 class="feature-title">Multi-Group Support</h2>
+                <p class="feature-description">
+                   You can create different groups. All your groups stay in one account, and you can switch between them anytime.
+                </p>
+            </div>
+        </section>
+        <h1 class="step-heading">Step-by-Step: How to Use Split Bill Buddy</h1>      
+        <div class="step-container">
+            <h2 class="step-title">1.Register or Login</h2>
+            <div class="mobile-frame-wrapper">
+                <div class="mobile-frame">
+                    <img src="homepage_images/a12.png" alt="Create account Illustration" style="width:100%; height:auto; object-fit: contain; display: block;">
+                </div>
+            </div>
+        <p class="step-description">
+        Create your account or login to access your groups, track expenses, and view settlements across devices. Your data stays synced and secure.
+        </p>
+        </div>
+        <div class="step-container">
+            <h2 class="step-title">2.Create a Group</h2>
+            <div class="mobile-frame-wrapper">
+                <div class="mobile-frame">
+                    <img src="homepage_images/a1.jpg" alt="Create Group Illustration" style="width:100%; height:auto; object-fit: contain; display: block;">
+                </div>
+            </div>
+        <p class="step-description">
+        First, create a new group by entering group name and member names. Once you create a group, it will appear under “Your Groups”. This group becomes your shared space where you and your members can start tracking expenses together.
+        </p>
+        </div>
+        <div class="step-container">
+            <h2 class="step-title">3.Add expenses</h2>
+            <div class="mobile-frame-wrapper">
+                <div class="mobile-frame">
+                    <img src="homepage_images/a16.png" alt="Record Expense Illustration" style="width:100%; height:auto; object-fit: fill; display: block;">
+                </div>
+            </div>
+        <p class="step-description">
+        Once your group is set up, start adding shared expenses. Just enter what the expense was for, how much was paid, and who paid it. You can also choose how to split it, add notes, pick a date, and upload a receipt.
+        </p>
+        </div>
+    </div>
+</body>
+<footer style="padding:20px; text-align:center; font-size:30px; color:#4CAF50;; margin-top:40px;">
+  <p>© 2025 Split Bill Buddy. All rights reserved.</p>
+</footer>
+</html>
