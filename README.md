@@ -1,19 +1,20 @@
 # SplitBillBuddy
 Smart Bill Splitting & Expense Tracking Web App
 
-📌 Project Overview
+##📌 Project Overview
 
 Split Bill Buddy is a web-based application designed to simplify shared expense management among groups. Whether it's trips, roommates, or family budgets, the platform helps users track expenses, split bills smartly, and settle balances efficiently.
 
 Unlike basic split apps, this system supports custom splitting, multiple groups, and optimized settlement calculations to minimize transactions.
 
-🎯 Objectives
-Simplify group expense tracking
-Eliminate confusion about payments
-Provide clear financial insights
-Support flexible bill splitting methods
-Enable multiple group management
-👥 Target Users
+###🎯 Objectives
+- Simplify group expense tracking
+- Eliminate confusion about payments
+- Provide clear financial insights
+- Support flexible bill splitting methods
+- Enable multiple group management
+
+###👥 Target Users
 College students (hostel/roommates)
 Travel groups
 Families managing shared expenses
