@@ -87,20 +87,12 @@ Unlike basic split apps, this system supports:
 
 ---
 
-## 🧠 Key Concepts Used  
-
-- Expense sharing algorithms  
-- Graph-based settlement optimization  
-- Real-time data updates  
-- Role-based access control  
-
----
 
 ## 🏗️ Tech Stack  
 
 - **Frontend:** HTML, CSS, JavaScript  
-- **Backend:** PHP / Node.js / Python *(update accordingly)*  
-- **Database:** MySQL / MongoDB  
+- **Backend:** PHP   
+- **Database:** MySQL 
 - **Libraries:** Chart.js, jsPDF  
 
 ---
