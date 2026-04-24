@@ -1,7 +1,4 @@
 # SplitBillBuddy
-This is a website based on Expenese Tracking
-💸 Split Bill Buddy
-
 Smart Bill Splitting & Expense Tracking Web App
 
 📌 Project Overview
