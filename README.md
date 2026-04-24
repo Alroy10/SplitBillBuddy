@@ -19,24 +19,27 @@ College students (hostel/roommates)
 Travel groups
 Families managing shared expenses
 Small teams handling project costs
+
 🚀 Features
 🔐 1. User Authentication
 Secure Sign Up & Login
 Password Reset functionality
+
 👨‍👩‍👧‍👦 2. Group Management
 Create and manage groups
 Invite members via link/email
 View group members
+
 💰 3. Expense Management
-Add expenses with:
-Title, amount, payer, date
-Receipt upload
-Split types:
-Equal split
-Custom percentage
-Custom fixed amount
-Edit/Delete expenses
-View expense history
+-  Add expenses with:
+      Title, amount, payer, date
+-  Receipt upload
+-  Split types:
+     - Equal split
+     - Custom percentage
+     - Custom fixed amount
+-  Edit/Delete expenses
+-  View expense history
 ⚖️ 4. Balance Calculation
 Real-time expense calculation
 Shows who owes whom
