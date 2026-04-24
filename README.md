@@ -101,7 +101,7 @@ Unlike basic split apps, this system supports:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/split-bill-buddy.git
+git clone https://github.com/your-username/SplitBillBuddy.git
 
 # Navigate into the project folder
 cd split-bill-buddy
