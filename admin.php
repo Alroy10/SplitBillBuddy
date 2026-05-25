@@ -30,7 +30,7 @@ h1 { color:#333; }
 .sidebar {
     position: fixed; left:0; top:0; width:220px; height:100%; background-color:#4CAF50; color:#fff; padding-top:20px;
 }
-.sidebar h2 { text-align:center; margin-bottom:30px; color:red;}
+.sidebar h2 { text-align:center; margin-bottom:30px; }
 .sidebar a { display:block; color:#fff; padding:12px 20px; text-decoration:none; margin-bottom:5px; border-radius:5px; }
 .sidebar a:hover { background-color:#45a049; }
 
